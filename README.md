@@ -22,3 +22,13 @@ go install github.com/albertobravi/hello
 ```
 ./bin/hello
 ```
+
+## Test
+
+```
+cd ~/projectDir
+```
+
+```
+go test github.com/albertobravi/stringutil
+```
