@@ -1,0 +1,14 @@
+machine:
+  environment:
+    GOPATH: /home/ubuntu/$CIRCLE_PROJECT_REPONAME
+
+general:
+  build_dir: $GOPATH
+
+checkout:
+  post:
+    - cd $GOPATH
+
+test:
+  override:
+    - go test ./...
